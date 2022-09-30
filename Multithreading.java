@@ -6,7 +6,7 @@ public class Multithreading extends Thread {
     private int rowNumber1;
     private int rowNumber2;
 
-    Matrices Matrix = new Matrices();
+    Matrices MatrixM = new Matrices();
     
     public Multithreading(int rowNumber1, int rowNumber2){
         this.rowNumber1 = rowNumber1;
@@ -14,14 +14,9 @@ public class Multithreading extends Thread {
     }
 
     public void run() {
-            
-        Matrix.multiplyMatrices(rowNumber1, rowNumber2);
+        System.out.print(rowNumber1);
+        System.out.print(rowNumber2);
+        MatrixM.multiplyMatrices(rowNumber1, rowNumber2);
 
-        /* 
-        try{
-                
-        } catch (InterruptedException e){
-        }
-        */   
     }
 }

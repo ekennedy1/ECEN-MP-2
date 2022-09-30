@@ -24,8 +24,10 @@ public class Matrices {
         
     }
 
+    //Prints m1 and m2 matrices
     public void printM (){
         for(int i = 0; i < 20; i++){
+            System.out.print(i + 1 + "  ");
             for(int j = 0; j < 20; j++){
                 System.out.print("[" + m1[i][j] + "]");
             }
@@ -35,6 +37,7 @@ public class Matrices {
         System.out.println();
 
         for(int i = 0; i < 20; i++){
+            System.out.print(i + 1 + "  ");
             for(int j = 0; j < 20; j++){
                 System.out.print("[" + m2[i][j] + "]");
             }
@@ -70,6 +73,7 @@ public class Matrices {
         System.out.println();
 
         for(int i = 0; i < 20; i++){
+            System.out.print(i + 1 + "  ");
             for(int j = 0; j < 20; j++){
                 System.out.print("[" + product[i][j] + "]");
             }
