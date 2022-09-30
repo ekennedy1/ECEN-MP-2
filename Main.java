@@ -4,7 +4,11 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
-        Multithreading Thread1 = new Multithreading(1);
+        Multithreading Thread1 = new Multithreading(0, 4);
+        Multithreading Thread2 = new Multithreading(4, 8);
+        Multithreading Thread3 = new Multithreading(8, 12);
+        Multithreading Thread4 = new Multithreading(12, 16);
+        Multithreading Thread5 = new Multithreading(16, 20);
 
         //Thread1.start();
 
@@ -28,7 +32,7 @@ public class Main {
                 case "C":
                 case "c":
 
-                    Matrix.Multiply(0, 20);
+                    
                     Matrix.printP();
                     break;
 

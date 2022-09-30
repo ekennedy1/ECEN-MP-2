@@ -3,21 +3,25 @@ import java.util.*;
 
 public class Multithreading extends Thread {
 
-    private int threadNumber;
+    private int rowNumber1;
+    private int rowNumber2;
+
+    Matrices Matrix = new Matrices();
     
-    public Multithreading(int threadNumber){
-        this.threadNumber = threadNumber;
+    public Multithreading(int rowNumber1, int rowNumber2){
+        this.rowNumber1 = rowNumber1;
+        this.rowNumber2 = rowNumber2;
     }
 
     public void run() {
-        for(int i = 1; i<= 5; i++){
-            System.out.println(i);
-
-            try{
-                Thread.sleep(1000);
-            } catch (InterruptedException e){
-            }
             
+        Matrix.multiplyMatrices(rowNumber1, rowNumber2);
+
+        /* 
+        try{
+                
+        } catch (InterruptedException e){
         }
+        */   
     }
 }
