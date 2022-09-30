@@ -10,7 +10,6 @@ public class Main {
 
         Matrices Matrix = new Matrices();
         Matrix.Initialize();
-        Matrix.printM();
 
         boolean stop = true;
         do{
@@ -22,13 +21,15 @@ public class Main {
                 case "I":
                 case "i":
 
-                    System.out.println("You pressed i or I.");
+                    Matrix.Initialize();
+                    Matrix.printM();
                     break;
 
                 case "C":
                 case "c":
 
-                    System.out.println("You pressed C or c.");
+                    Matrix.Multiply(0, 20);
+                    Matrix.printP();
                     break;
 
                 

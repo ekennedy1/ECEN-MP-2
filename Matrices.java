@@ -45,16 +45,36 @@ public class Matrices {
     //Multiply from rows a to b
     //for use in multitreasing class
     public void Multiply (int a, int b){
-        
+        int products;
         for(int i = a; i < b; i++){
-            for(int j = 0; j < 20; j++){
-                
-
-
+            
+            for(int j = 0; j < 0; j++){
+                int sum = 0;
+                for(int k = 0; k < 20; k++){
+                    products = m1[i][k] * m2[k][j];
+                    sum = sum + products;
+                    product[i][j] = sum;
+                    System.out.print(products);
+    
+                }
             }
+            
 
         }
         
+    }
+
+    //Prints product matrix
+    public void printP (){
+
+        System.out.println();
+
+        for(int i = 0; i < 20; i++){
+            for(int j = 0; j < 20; j++){
+                System.out.print("[" + product[i][j] + "]");
+            }
+            System.out.println();
+        }
     }
 
 }
