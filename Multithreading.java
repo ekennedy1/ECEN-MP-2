@@ -17,6 +17,7 @@ public class Multithreading extends Thread {
         System.out.print(rowNumber1);
         System.out.print(rowNumber2);
         MatrixM.multiplyMatrices(rowNumber1, rowNumber2);
+        
 
     }
 }

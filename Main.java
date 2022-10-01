@@ -36,9 +36,9 @@ public class Main {
                     Thread5.start();
                     Matrix.multiplyMatrices(0, 4);
                     Matrix.multiplyMatrices(4, 8);
-                    Matrix.multiplyMatrices(8, 12);
-                    Matrix.multiplyMatrices(12, 16);
-                    Matrix.multiplyMatrices(16, 20);
+                    //Matrix.multiplyMatrices(8, 12);
+                    //Matrix.multiplyMatrices(12, 16);
+                    //Matrix.multiplyMatrices(16, 20);
                     break;
 
                 case "P":
